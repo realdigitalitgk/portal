@@ -15,37 +15,44 @@
     body {
       background: #f5f8fc;
       color: #333;
+      margin: 0 5vw;
+    }
+    body, html {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
     }
     header {
       background: #003366;
       color: #fff;
-      padding: 20px 30px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
+      padding: 25px 20px;
+      text-align: center;
     }
-    .header-left h1 {
+    .header-title h1 {
       font-size: 1.8rem;
       margin-bottom: 5px;
     }
-    .header-left p {
+    .header-title p {
       font-size: 0.95rem;
       color: #ffeead;
     }
     .start-button {
       background: #ff9933;
       color: #fff;
-      padding: 12px 24px;
+      padding: 10px 20px;
       text-decoration: none;
       border-radius: 6px;
       font-size: 0.95rem;
       font-weight: bold;
+      position: absolute;
+      top: 20px;
+      right: 5vw;
     }
     .container {
       max-width: 1200px;
       margin: 20px auto;
-      padding: 20px;
+      padding: 30px;
       background: #ffffff;
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -65,6 +72,7 @@
     }
     .director {
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
       margin-top: 20px;
     }
@@ -98,21 +106,47 @@
     .footer {
       text-align: center;
       font-size: 0.9rem;
-      color: #666;
+      color: #fff;
       padding: 20px;
       border-top: 1px solid #ddd;
       margin-top: 40px;
+      background: #003366;
+    }
+    @media screen and (max-width: 768px) {
+      body {
+        margin: 0 3vw;
+      }
+      .dual-section {
+        flex-direction: column;
+      }
+      .start-button {
+        position: static;
+        margin: 10px auto;
+        display: block;
+      }
     }
   </style>
+  <script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+    document.addEventListener('keydown', function(e) {
+      if (e.ctrlKey && (e.key === 'c' || e.key === 'u' || e.key === 's')) {
+        e.preventDefault();
+      }
+      if (e.keyCode === 44) {
+        e.preventDefault();
+      }
+    });
+  </script>
 </head>
 <body>
+  <a href="https://script.google.com/macros/s/AKfycbxbbBJRBX3yazvF974Zw8Qz3g6gwx_7_euM3kCYFeWIAFyB9JUaGe6Yuzo6z75McKEx/exec" class="start-button" target="_blank">🚀 Start Test Portal</a>
   <header>
-    <div class="header-left">
+    <div class="header-title">
       <h1>Real Digital Computer Institute</h1>
       <p>Make RS-CIT Exam Success Easy & Digital!</p>
     </div>
-    <a href="https://script.google.com/macros/s/AKfycbxbbBJRBX3yazvF974Zw8Qz3g6gwx_7_euM3kCYFeWIAFyB9JUaGe6Yuzo6z75McKEx/exec" class="start-button" target="_blank">🚀 Start Test Portal</a>
   </header>
+
   <div class="container">
     <div class="director">
       <img src="https://github.com/realdigitalitgk/portal/raw/main/directorpic.png" alt="Director Photo">
@@ -165,11 +199,16 @@
       “स्मार्ट तरीक़े से करें प्रैक्टिस – RS-CIT परीक्षा में पाएं शानदार सफलता!”
     </div>
 
-    <div class="contact">
-      <h3>📍 Contact Us</h3>
-      <p><strong>🏫 Address:</strong> Dantali Pahari, Tehsil-Bansoor, District Kotputli-Behror, Rajasthan</p>
-      <p><strong>📧 Email:</strong> realdigitalinstitute6@gmail.com</p>
-      <p><strong>📞 Mobile:</strong> 8890895799, 9509644090</p>
+    <div class="dual-section">
+      <div class="section-box">
+        <h3>📍 Contact Us</h3>
+        <p><strong>🏫 Address:</strong> Dantali Pahari, Tehsil-Bansoor, District Kotputli-Behror, Rajasthan</p>
+        <p><strong>📧 Email:</strong> realdigitalinstitute6@gmail.com</p>
+        <p><strong>📞 Mobile:</strong> 8890895799, 9509644090</p>
+      </div>
+      <div class="section-box">
+        <img src="" alt="Students Photo" style="width:100%; max-width:300px; height:auto; object-fit:cover; border-radius:10px; border:2px solid #003366;">
+      </div>
     </div>
 
     <div class="footer">
