@@ -78,12 +78,13 @@
       color: #003366;
       font-weight: 600;
       font-size: 1rem;
-      margin: 10px 0 6px;
+      margin-bottom: 6px;
+      margin-top: 10px;
     }
     ul {
       list-style-type: none;
       padding-left: 16px;
-      margin: 6px 0;
+      margin: 8px 0;
     }
     li {
       padding: 4px 0;
@@ -94,7 +95,7 @@
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      margin-top: 16px;
+      margin-top: 20px;
     }
     .director img {
       width: 100px;
@@ -112,13 +113,13 @@
       border-radius: 8px;
       text-align: center;
       color: #856404;
-      margin-top: 16px;
+      margin-top: 20px;
     }
     .dual-section {
       display: flex;
       flex-wrap: wrap;
       gap: 30px;
-      margin-top: 16px;
+      margin-top: 20px;
     }
     .section-box {
       flex: 1 1 45%;
@@ -129,7 +130,7 @@
       color: #fff;
       padding: 15px;
       border-top: 1px solid #ddd;
-      margin-top: 20px;
+      margin-top: 30px;
       background: #003366;
     }
 
@@ -137,93 +138,44 @@
       body {
         margin: 0 3vw;
       }
-
       header {
         flex-direction: column;
         align-items: center;
         text-align: center;
         padding: 20px 10px;
       }
-
       .logo-img {
         width: 80px;
         height: 80px;
         order: 1;
       }
-
       .header-title {
         order: 2;
         margin-top: 10px;
       }
-
       .header-title h1 {
         font-size: 1.2rem;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
       }
-
       .header-title p {
         font-size: 0.8rem;
         margin-top: 2px;
         color: #ffdb70;
       }
-
       .start-button {
         order: 3;
         margin-top: 12px;
         font-size: 0.85rem;
         padding: 10px 20px;
       }
-
       .dual-section {
         flex-direction: column;
-        gap: 16px;
-        margin-top: 12px;
       }
-
       .director {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin-top: 12px;
-      }
-
-      .director img {
-        margin-bottom: 10px;
-      }
-
-      .section-box {
-        text-align: center;
-      }
-
-      .tagline {
-        margin-top: 12px;
-        padding: 8px;
-        font-size: 0.95rem;
-      }
-
-      h3 {
-        margin: 8px 0 6px;
-      }
-
-      ul {
-        margin: 6px 0;
-        padding-left: 0;
-      }
-
-      li {
-        padding: 3px 0;
-      }
-
-      .container > .dual-section:last-child .section-box:first-child {
-        text-align: center;
-      }
-
-      .footer {
-        margin-top: 16px;
-        padding: 12px;
-        font-size: 0.8rem;
+        align-items: flex-start;
       }
     }
   </style>
