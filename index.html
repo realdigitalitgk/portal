@@ -26,9 +26,11 @@
     }
     header {
       background: #003366;
-      padding: 20px 20px 50px;
-      position: relative;
-      text-align: center;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
     }
     .logo-img {
       width: 100px;
@@ -136,20 +138,37 @@
       body {
         margin: 0 3vw;
       }
+      header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px 10px;
+      }
       .logo-img {
         width: 80px;
         height: 80px;
+        order: 1;
+      }
+      .header-title {
+        order: 2;
+        margin-top: 10px;
       }
       .header-title h1 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
       .header-title p {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
+        margin-top: 2px;
+        color: #ffdb70;
       }
       .start-button {
-        font-size: 0.85rem;
-        padding: 9px 16px;
+        order: 3;
         margin-top: 12px;
+        font-size: 0.85rem;
+        padding: 10px 20px;
       }
       .dual-section {
         flex-direction: column;
@@ -174,10 +193,10 @@
 </head>
 <body>
 
- <header style="display: flex; align-items: center; justify-content: space-between; padding: 20px; background: #003366; flex-wrap: wrap;">
+<header>
   <img src="https://github.com/realdigitalitgk/portal/raw/main/120x120.png" alt="Institute Logo" class="logo-img">
   
-  <div class="header-title" style="text-align: center; flex: 1;">
+  <div class="header-title">
     <h1>Real Digital Computer Institute</h1>
     <p>Make RS-CIT Exam Success Easy & Digital!</p>
   </div>
@@ -186,73 +205,74 @@
      class="start-button" target="_blank">🚀 Start Test Now</a>
 </header>
 
-  <div class="container">
-    <div class="director">
-      <img src="https://github.com/realdigitalitgk/portal/raw/main/directorpic.png" alt="Director Photo">
-      <div>
-        <strong>👨‍🏫 Director: Deepak Yadav</strong><br>
-        <em>Visionary educator and digital learning promoter committed to student success.</em>
-      </div>
-    </div>
-
-    <div class="dual-section">
-      <div class="section-box">
-        <h3>📌 Key Features</h3>
-        <ul>
-          <li>• Mobile & Desktop Friendly Interface</li>
-          <li>• Real-time Test Experience</li>
-          <li>• Instant Results with Performance Report</li>
-          <li>• Available in Hindi & English</li>
-        </ul>
-      </div>
-      <div class="section-box">
-        <h3>📚 RS-CIT Special Content</h3>
-        <ul>
-          <li>• Old Papers & iLearn Selected Q&A</li>
-          <li>• Chapter-wise Objective Questions</li>
-          <li>• Easy & Effective Notes</li>
-          <li>• Best Question Bank with Smart Techniques</li>
-          <li>• Guaranteed Preparation for Final Exam</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="dual-section">
-      <div class="section-box">
-        <h3>✍️ Practice & Exam Modes</h3>
-        <ul>
-          <li>• Practice Mode: No time limit, with answer explanations</li>
-          <li>• Exam Mode: Time-bound tests like real exam environment</li>
-        </ul>
-      </div>
-      <div class="section-box">
-        <h3>🏆 Ranking System</h3>
-        <ul>
-          <li>• Institute-Level Ranking: अपने बैच के छात्रों के बीच आपकी स्थिति</li>
-          <li>• State-Level Ranking: पूरे राज्य के छात्रों में आपकी रैंक</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="tagline">
-      “स्मार्ट तरीक़े से करें प्रैक्टिस – RS-CIT परीक्षा में पाएं शानदार सफलता!”
-    </div>
-
-    <div class="dual-section">
-      <div class="section-box">
-        <h3>📍 Contact Us</h3>
-        <p><strong>🏫 Address:</strong> Dantali Pahari, Tehsil-Bansoor, District Kotputli-Behror, Rajasthan</p>
-        <p><strong>📧 Email:</strong> realdigitalinstitute6@gmail.com</p>
-        <p><strong>📞 Mobile:</strong> 8890895799, 9509644090</p>
-      </div>
-      <div class="section-box">
-        <img src="https://github.com/realdigitalitgk/portal/raw/main/girlsstudents.jpg" alt="Students Photo" style="width:100%; max-width:300px; height:auto; object-fit:cover; border-radius:10px; border:2px solid #003366;">
-      </div>
-    </div>
-
-    <div class="footer">
-      Powered by Sunshine Digital | © 2025 Sunshine Online Test Portal
+<div class="container">
+  <div class="director">
+    <img src="https://github.com/realdigitalitgk/portal/raw/main/directorpic.png" alt="Director Photo">
+    <div>
+      <strong>👨‍🏫 Director: Deepak Yadav</strong><br>
+      <em>Visionary educator and digital learning promoter committed to student success.</em>
     </div>
   </div>
+
+  <div class="dual-section">
+    <div class="section-box">
+      <h3>📌 Key Features</h3>
+      <ul>
+        <li>• Mobile & Desktop Friendly Interface</li>
+        <li>• Real-time Test Experience</li>
+        <li>• Instant Results with Performance Report</li>
+        <li>• Available in Hindi & English</li>
+      </ul>
+    </div>
+    <div class="section-box">
+      <h3>📚 RS-CIT Special Content</h3>
+      <ul>
+        <li>• Old Papers & iLearn Selected Q&A</li>
+        <li>• Chapter-wise Objective Questions</li>
+        <li>• Easy & Effective Notes</li>
+        <li>• Best Question Bank with Smart Techniques</li>
+        <li>• Guaranteed Preparation for Final Exam</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="dual-section">
+    <div class="section-box">
+      <h3>✍️ Practice & Exam Modes</h3>
+      <ul>
+        <li>• Practice Mode: No time limit, with answer explanations</li>
+        <li>• Exam Mode: Time-bound tests like real exam environment</li>
+      </ul>
+    </div>
+    <div class="section-box">
+      <h3>🏆 Ranking System</h3>
+      <ul>
+        <li>• Institute-Level Ranking: अपने बैच के छात्रों के बीच आपकी स्थिति</li>
+        <li>• State-Level Ranking: पूरे राज्य के छात्रों में आपकी रैंक</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="tagline">
+    “स्मार्ट तरीक़े से करें प्रैक्टिस – RS-CIT परीक्षा में पाएं शानदार सफलता!”
+  </div>
+
+  <div class="dual-section">
+    <div class="section-box">
+      <h3>📍 Contact Us</h3>
+      <p><strong>🏫 Address:</strong> Dantali Pahari, Tehsil-Bansoor, District Kotputli-Behror, Rajasthan</p>
+      <p><strong>📧 Email:</strong> realdigitalinstitute6@gmail.com</p>
+      <p><strong>📞 Mobile:</strong> 8890895799, 9509644090</p>
+    </div>
+    <div class="section-box">
+      <img src="https://github.com/realdigitalitgk/portal/raw/main/girlsstudents.jpg" alt="Students Photo" style="width:100%; max-width:300px; height:auto; object-fit:cover; border-radius:10px; border:2px solid #003366;">
+    </div>
+  </div>
+
+  <div class="footer">
+    Powered by Sunshine Digital | © 2025 Sunshine Online Test Portal
+  </div>
+</div>
+
 </body>
 </html>
