@@ -4,23 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Real Digital RS-CIT Online Test Portal</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Poppins', sans-serif;
     }
     body {
-      background: linear-gradient(to right, #e0f7fa, #ffffff);
+      background: #f5f8fc;
       color: #333;
-      line-height: 1.6;
     }
     header {
-      background: #005792;
+      background: #003366;
       color: #fff;
-      padding: 20px;
+      padding: 20px 10px;
       text-align: center;
     }
     header h1 {
@@ -31,37 +30,45 @@
       font-size: 1.1rem;
     }
     .container {
-      max-width: 1000px;
+      max-width: 1200px;
       margin: 20px auto;
       padding: 20px;
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
     .button {
-      background: #28a745;
+      background: #ff9933;
       color: #fff;
-      padding: 12px 24px;
+      padding: 12px 30px;
       text-decoration: none;
-      border-radius: 8px;
+      border-radius: 6px;
       font-size: 1rem;
-      display: inline-block;
+      font-weight: bold;
       margin-bottom: 20px;
+      display: inline-block;
     }
-    .pricing {
-      background: #f1f1f1;
-      padding: 15px;
-      border-left: 5px solid #28a745;
-      margin: 20px 0;
-      border-radius: 8px;
+    .pricing, .features, .content, .ranking, .contact, .footer, .tagline {
+      margin-top: 30px;
     }
-    .features ul, .content ul {
-      list-style: none;
+    h3 {
+      color: #003366;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    ul {
+      list-style-type: none;
       padding-left: 0;
     }
-    .features li, .content li {
-      padding: 5px 0;
+    li {
+      padding: 6px 0;
       font-size: 1rem;
+    }
+    .pricing {
+      background: #eef4fb;
+      padding: 20px;
+      border-left: 5px solid #ff9933;
+      border-radius: 8px;
     }
     .director {
       display: flex;
@@ -69,29 +76,29 @@
       margin-top: 20px;
     }
     .director img {
-      width: 100px;
-      height: 100px;
+      width: 110px;
+      height: 110px;
       object-fit: cover;
       border-radius: 50%;
-      margin-right: 15px;
-      border: 3px solid #005792;
-    }
-    .ranking, .contact, .footer {
-      margin-top: 30px;
+      margin-right: 20px;
+      border: 3px solid #003366;
     }
     .tagline {
-      background: #ffde59;
+      background: #fff3cd;
       padding: 15px;
       font-weight: bold;
       font-size: 1.1rem;
       border-radius: 8px;
       text-align: center;
+      color: #856404;
     }
     .footer {
       text-align: center;
       font-size: 0.9rem;
       color: #666;
-      padding: 15px;
+      padding: 20px;
+      border-top: 1px solid #ddd;
+      margin-top: 40px;
     }
   </style>
 </head>
