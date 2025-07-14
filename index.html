@@ -19,15 +19,28 @@
     header {
       background: #003366;
       color: #fff;
-      padding: 20px 10px;
-      text-align: center;
+      padding: 20px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
     }
-    header h1 {
-      font-size: 2rem;
+    .header-left h1 {
+      font-size: 1.8rem;
       margin-bottom: 5px;
     }
-    header p {
-      font-size: 1.1rem;
+    .header-left p {
+      font-size: 0.95rem;
+      color: #ffeead;
+    }
+    .start-button {
+      background: #ff9933;
+      color: #fff;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      font-weight: bold;
     }
     .container {
       max-width: 1200px;
@@ -36,20 +49,6 @@
       background: #ffffff;
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-    .button {
-      background: #ff9933;
-      color: #fff;
-      padding: 12px 30px;
-      text-decoration: none;
-      border-radius: 6px;
-      font-size: 1rem;
-      font-weight: bold;
-      margin-bottom: 20px;
-      display: inline-block;
-    }
-    .pricing, .features, .content, .ranking, .contact, .footer, .tagline {
-      margin-top: 30px;
     }
     h3 {
       color: #003366;
@@ -63,12 +62,6 @@
     li {
       padding: 6px 0;
       font-size: 1rem;
-    }
-    .pricing {
-      background: #eef4fb;
-      padding: 20px;
-      border-left: 5px solid #ff9933;
-      border-radius: 8px;
     }
     .director {
       display: flex;
@@ -91,6 +84,16 @@
       border-radius: 8px;
       text-align: center;
       color: #856404;
+      margin-top: 30px;
+    }
+    .dual-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-top: 30px;
+    }
+    .section-box {
+      flex: 1 1 45%;
     }
     .footer {
       text-align: center;
@@ -104,17 +107,13 @@
 </head>
 <body>
   <header>
-    <h1>🧠 ONLINE TEST WEB PORTAL</h1>
-    <p>Real Digital Computer Institute – Make RS-CIT Exam Success Easy & Digital!</p>
+    <div class="header-left">
+      <h1>Real Digital Computer Institute</h1>
+      <p>Make RS-CIT Exam Success Easy & Digital!</p>
+    </div>
+    <a href="https://script.google.com/macros/s/AKfycbxbbBJRBX3yazvF974Zw8Qz3g6gwx_7_euM3kCYFeWIAFyB9JUaGe6Yuzo6z75McKEx/exec" class="start-button" target="_blank">🚀 Start Test Portal</a>
   </header>
   <div class="container">
-    <a href="https://script.google.com/macros/s/AKfycbxbbBJRBX3yazvF974Zw8Qz3g6gwx_7_euM3kCYFeWIAFyB9JUaGe6Yuzo6z75McKEx/exec" class="button" target="_blank">🚀 Start Test Portal</a>
-
-    <div class="pricing">
-      <h3>🔔 RS-CIT तैयारी अब केवल ₹49 में – 2 महीने की एक्सेस के साथ</h3>
-      <p>👉 One Student = One Username</p>
-    </div>
-
     <div class="director">
       <img src="https://github.com/realdigitalitgk/portal/raw/main/directorpic.png" alt="Director Photo">
       <div>
@@ -123,39 +122,43 @@
       </div>
     </div>
 
-    <div class="features">
-      <h3>📌 Key Features</h3>
-      <ul>
-        <li>• Mobile & Desktop Friendly Interface</li>
-        <li>• Real-time Test Experience</li>
-        <li>• Instant Results with Performance Report</li>
-        <li>• Available in Hindi & English</li>
-      </ul>
+    <div class="dual-section">
+      <div class="section-box">
+        <h3>📌 Key Features</h3>
+        <ul>
+          <li>• Mobile & Desktop Friendly Interface</li>
+          <li>• Real-time Test Experience</li>
+          <li>• Instant Results with Performance Report</li>
+          <li>• Available in Hindi & English</li>
+        </ul>
+      </div>
+      <div class="section-box">
+        <h3>📚 RS-CIT Special Content</h3>
+        <ul>
+          <li>• Old Papers & iLearn Selected Q&A</li>
+          <li>• Chapter-wise Objective Questions</li>
+          <li>• Easy & Effective Notes</li>
+          <li>• Best Question Bank with Smart Techniques</li>
+          <li>• Guaranteed Preparation for Final Exam</li>
+        </ul>
+      </div>
     </div>
 
-    <div class="content">
-      <h3>📚 RS-CIT Special Content</h3>
-      <ul>
-        <li>• Old Papers & iLearn Selected Q&A</li>
-        <li>• Chapter-wise Objective Questions</li>
-        <li>• Easy & Effective Notes</li>
-        <li>• Best Question Bank with Smart Techniques</li>
-        <li>• Guaranteed Preparation for Final Exam</li>
-      </ul>
-
-      <h3>✍️ Practice & Exam Modes</h3>
-      <ul>
-        <li>• Practice Mode: No time limit, with answer explanations</li>
-        <li>• Exam Mode: Time-bound tests like real exam environment</li>
-      </ul>
-    </div>
-
-    <div class="ranking">
-      <h3>🏆 Ranking System</h3>
-      <ul>
-        <li>• Institute-Level Ranking: अपने बैच के छात्रों के बीच आपकी स्थिति</li>
-        <li>• State-Level Ranking: पूरे राज्य के छात्रों में आपकी रैंक</li>
-      </ul>
+    <div class="dual-section">
+      <div class="section-box">
+        <h3>✍️ Practice & Exam Modes</h3>
+        <ul>
+          <li>• Practice Mode: No time limit, with answer explanations</li>
+          <li>• Exam Mode: Time-bound tests like real exam environment</li>
+        </ul>
+      </div>
+      <div class="section-box">
+        <h3>🏆 Ranking System</h3>
+        <ul>
+          <li>• Institute-Level Ranking: अपने बैच के छात्रों के बीच आपकी स्थिति</li>
+          <li>• State-Level Ranking: पूरे राज्य के छात्रों में आपकी रैंक</li>
+        </ul>
+      </div>
     </div>
 
     <div class="tagline">
